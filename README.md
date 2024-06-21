@@ -8,7 +8,7 @@ We evaluated our method on two image segmentation datasets. Cityscapes and Pasca
 Start by downloading [Cityscapes](https://www.cityscapes-dataset.com/) and [Pascal Context](https://cs.stanford.edu/~roozbeh/pascal-context/#download). For Pascal Context make sure you choose the version with 59 categories.
 
 Inside the HRNet folder, you should place your downloaded data as follows:
-````bash
+```
 HRNet-Semantic-Segmentation/data
 ├── cityscapes
 │   ├── gtFine
@@ -30,7 +30,7 @@ HRNet-Semantic-Segmentation/data
 │   │   ├── test.lst
 │   │   ├── trainval.lst
 │   │   └── val.lst
-````
+```
 The Denoising Diffusion Probabilistic Models used in the paper is based on [openai/guided-diffusion](https://github.com/openai/guided-diffusion). Download the class unconditional pretrained model [here](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/256x256_diffusion_uncond.pt) and 
 the segmentation model provided by [Fischer et al.](https://files.sri.inf.ethz.ch/segmentation-smoothing/models.tar.gz) and place them in the `models` directory.
 
